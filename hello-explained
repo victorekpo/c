@@ -1,0 +1,12 @@
+#include <stdio.h> - #include preprocessor directive, includes contents of file at this location. stdio.h and stdlib.h headers to access functions from them.
+#include <stdlib.h>
+int main(void) {
+  puts("Hello, world!"); - puts function declared in stdio.h 
+  return EXIT_SUCCESS; - EXIT_SUCESS macro is defined in stdlib.h
+}
+
+-stdio.h contains the declarations for C Standard I/O functions and stdlib.h contains the declarations for general utility functions.
+-The main function defines the main entry point for the program that's executed in a hosted environment when the program is invoked from the command line or from another program. 
+-We define main to return a value of type int and place void inside the parentheses to indicate that the function does not accept arguments. The int type is a signed integer type that can be used to represnet positive, negative values and 0. The value returned by the main function indicates whether the program terminated successfully. 
+-The puts function is a C Standard Library function that writes a string argument to stdout, which typically represents the console or terminal window, and appends a newline character to the output.
+-EXIT_SUCESS is an object-like macro that commonly expands to 0 and is typically defined as follows
